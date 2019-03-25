@@ -13,7 +13,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require("gulp-clean-css");
 
 
-// + autoprefixer
+//CONCAT + MAPS + CLEAN + autoprefixer
 gulp.task("scss", function(){
     return gulp.src("./src/scss/*.scss")
 
@@ -30,6 +30,8 @@ gulp.task("scss", function(){
                .pipe(gulp.dest("./src/"));           
 });
 
+
+// CONCAT JS
 gulp.task("concat", function() {
     return gulp.src('./src/js/*.js')
     .pipe(concat('script.js')) 
