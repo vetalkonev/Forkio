@@ -33,7 +33,8 @@ gulp.task("scss", function(){
 
 // CONCAT JS
 gulp.task("concat", function() {
-    return gulp.src('./src/js/*.js')
+    return gulp
+    .src(['./src/js/libs/*.js', './src/js/script/*.js'])
     .pipe(concat('script.js')) 
     .pipe(gulp.dest('./src/js'));
 });
