@@ -35,10 +35,7 @@ gulp.task("scss", function(){
 gulp.task("concat", function() {
     return gulp
     .src(['./src/js/libs/*.js', './src/js/script/*.js'])
-<<<<<<< HEAD
-=======
     // .pipe(order(['./src/js/libs/*.js', './src/js/*.js']))
->>>>>>> header
     .pipe(concat('script.js')) 
     .pipe(gulp.dest('./src/js'));
 });
