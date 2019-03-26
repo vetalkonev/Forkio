@@ -33,13 +33,16 @@ gulp.task("scss", function(){
 
 // CONCAT JS
 gulp.task("concat", function() {
-    return gulp.src('./src/js/*.js')
+    return gulp
+    .src(['./src/js/libs/*.js', './src/js/script/*.js'])
+    // .pipe(order(['./src/js/libs/*.js', './src/js/*.js']))
     .pipe(concat('script.js')) 
     .pipe(gulp.dest('./src/js'));
 });
 
 gulp.task("uglify", ['concat'], function () {
-    return gulp.src("./src/js/script.js")
+    return gulp
+        .src("./src/js/script.js")
         .pipe(uglify())
         .pipe(rename('script.min.js'))
         .pipe(gulp.dest("./src/js"));
