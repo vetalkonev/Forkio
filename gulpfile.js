@@ -35,12 +35,17 @@ gulp.task("scss", function(){
 gulp.task("concat", function() {
     return gulp
     .src(['./src/js/libs/*.js', './src/js/script/*.js'])
+<<<<<<< HEAD
+=======
+    // .pipe(order(['./src/js/libs/*.js', './src/js/*.js']))
+>>>>>>> header
     .pipe(concat('script.js')) 
     .pipe(gulp.dest('./src/js'));
 });
 
 gulp.task("uglify", ['concat'], function () {
-    return gulp.src("./src/js/script.js")
+    return gulp
+        .src("./src/js/script.js")
         .pipe(uglify())
         .pipe(rename('script.min.js'))
         .pipe(gulp.dest("./src/js"));
