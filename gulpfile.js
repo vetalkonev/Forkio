@@ -18,9 +18,8 @@ gulp.task("scss", function(){
     return gulp.src("./src/scss/*.scss")
 
                .pipe(sourcemaps.init())
-               .pipe(sass().on("error", sass.logError))
+               .pipe(sass({includePaths: ['./src/scss']}).on("error", sass.logError))
                .pipe(sourcemaps.write())
-
                .pipe(autoprefixer({
                    browsers: ['last 2 versions'],
                    cascade: false
@@ -35,7 +34,6 @@ gulp.task("scss", function(){
 gulp.task("concat", function() {
     return gulp
     .src(['./src/js/libs/*.js', './src/js/script/*.js'])
-    // .pipe(order(['./src/js/libs/*.js', './src/js/*.js']))
     .pipe(concat('script.js')) 
     .pipe(gulp.dest('./src/js'));
 });
@@ -71,7 +69,8 @@ gulp.task("srv", function() {
     server: "./"
   });
 
-  gulp.watch("./src/scss/*.scss", ["scss"]).on("change", browserSync.reload);
+  gulp.watch("./src/scss/partials/**/*.scss", ["scss"]).on("change", browserSync.reload);
+  // gulp.watch("./src/scss/*.scss", ["scss"]).on("change", browserSync.reload);
   gulp.watch("./src/img/*.*", ["img"]).on("change", browserSync.reload);
   gulp.watch("./src/js/*.*", ["js"]).on("change", browserSync.reload);
   gulp.watch("./index.html").on("change", browserSync.reload);
@@ -101,6 +100,6 @@ gulp.task('img', function() {
   // !!!!!! FINAL BUILD
 // gulp.task('dev', gulpSequence('clean', 'srv'));
 
-gulp.task('build', gulpSequence('clean',["scss", "uglify", 'img'], ['copyCSS', 'copyJS']) );
+gulp.task('build', gulpSequence('clean',["scss", "uglify", 'img'], ['copyCSS', 'copyJS'], 'srv') );
 
 gulp.task("default", ["dev"]);
