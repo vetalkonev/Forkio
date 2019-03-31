@@ -69,7 +69,7 @@ gulp.task("srv", function() {
     server: "./"
   });
 
-  gulp.watch("./src/scss/partials/**/*.scss", ["scss"]).on("change", browserSync.reload);
+  gulp.watch("./src/scss/**/*.scss", ["scss"]).on("change", browserSync.reload);
   // gulp.watch("./src/scss/*.scss", ["scss"]).on("change", browserSync.reload);
   gulp.watch("./src/img/*.*", ["img"]).on("change", browserSync.reload);
   gulp.watch("./src/js/*.*", ["js"]).on("change", browserSync.reload);
