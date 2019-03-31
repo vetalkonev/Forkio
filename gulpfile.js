@@ -26,7 +26,8 @@ gulp.task("scss", function(){
                }))
                .pipe(cleanCSS())
                .pipe(rename('style.min.css'))
-               .pipe(gulp.dest("./src/"));           
+               .pipe(gulp.dest("./dist/"))
+               .pipe(browserSync.stream())           
 });
 
 
@@ -70,7 +71,7 @@ gulp.task("srv", function() {
   });
 
   gulp.watch("./src/scss/**/*.scss", ["scss"]).on("change", browserSync.reload);
-  // gulp.watch("./src/scss/*.scss", ["scss"]).on("change", browserSync.reload);
+  
   gulp.watch("./src/img/*.*", ["img"]).on("change", browserSync.reload);
   gulp.watch("./src/js/*.*", ["js"]).on("change", browserSync.reload);
   gulp.watch("./index.html").on("change", browserSync.reload);
