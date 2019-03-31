@@ -102,4 +102,4 @@ gulp.task('img', function() {
 
 gulp.task('build', gulpSequence('clean',["scss", "uglify", 'img'], ['copyCSS', 'copyJS'], 'srv') );
 
-gulp.task("default", ["dev"]);
+// gulp.task("default", ["dev"]);
