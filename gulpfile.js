@@ -15,7 +15,7 @@ const cleanCSS = require("gulp-clean-css");
 
 //CONCAT + MAPS + CLEAN + autoprefixer
 gulp.task("scss", function(){
-    return gulp.src("./src/scss/*.scss")
+    return gulp.src("./src/scss/**/*.scss")
 
                .pipe(sourcemaps.init())
                .pipe(sass({includePaths: ['./src/scss']}).on("error", sass.logError))
@@ -27,7 +27,7 @@ gulp.task("scss", function(){
                .pipe(cleanCSS())
                .pipe(rename('style.min.css'))
                .pipe(gulp.dest("./dist/"))
-               .pipe(browserSync.stream())           
+               .pipe(browserSync.reload({stream: true}));         
 });
 
 
@@ -69,12 +69,12 @@ gulp.task("srv", function() {
   browserSync.init({
     server: "./"
   });
-
   gulp.watch("./src/scss/**/*.scss", ["scss"]).on("change", browserSync.reload);
-  
+  // gulp.watch("./src/scss/index.scss", ["scss"]).on("change", browserSync.reload);
   gulp.watch("./src/img/*.*", ["img"]).on("change", browserSync.reload);
   gulp.watch("./src/js/*.*", ["js"]).on("change", browserSync.reload);
   gulp.watch("./index.html").on("change", browserSync.reload);
+  gulp.watch("./dist/style.min.css").on('change', browserSync.reload);
 });
 
 
