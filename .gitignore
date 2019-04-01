@@ -1,5 +1,7 @@
 .vscode
-/node_modules/
+/dist/
 /build/
 /resuorce/
-/dist/
+/node_modules/
+
+.idea/
