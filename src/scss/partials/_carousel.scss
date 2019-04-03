@@ -1,3 +1,117 @@
-.services {
+.carousel {
+    width: 68%;
+    margin: 0 auto;
+    position: relative;
+
+    &__item {
+        margin-top: 50px;
+        @include grid-center;
+    }
+
+    &__user {
+        @include grid-center;
+    }
+
+    &__img {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    &__user-name {
+        font-family: Montserrat, sans-serif;
+        @include grid-center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    &__name {
+        margin-bottom: 7px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__nickname {
+        font-size: 16px;
+        color: #8d81ac;
+    }
+
+    &__feedback {
+        font-family: Lato, sans-serif;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        text-align: center;
+        color: #333333;
+        font-size: 17px;
+    }
+
+    &__feedback--span {
+        color: #8d81ac;
+    }
+
+    &__time {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: Montserrat, sans-serif;
+        color: #848e97;
+    }
+
+    .prewArrow {
+        position: absolute;
+        right: 113%;
+        top: 59%;
+    }
+
+    .nextArrow {
+        position: absolute;
+        left: 113%;
+        bottom: 36%;
+    }
+}
+
+@media (min-width: 401px) {
+    .carousel {
+        width: 75%;
     
+        &__item {
+            margin-top: 100px;
+            @include grid-center;
+        }
+    
+        &__user {
+            display: grid;
+            grid-template-columns: 85px auto;
+            grid-column-gap: 23px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    
+        &__user-name {
+            font-family: Montserrat, sans-serif;
+            display: grid;
+            justify-items: start;
+            padding-top: 22px;
+        }
+    
+        &__feedback {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    
+        &__time {
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+    
+        .prewArrow {
+            right: 108%;
+            top: 77%;
+        }
+    
+        .nextArrow {
+            left: 108%;
+            bottom: 18%;
+        }
+    }
 }

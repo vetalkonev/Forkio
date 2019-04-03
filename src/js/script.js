@@ -10,7 +10,7 @@
 })();
 (function () {
 	$('.carousel').slick({
-        prevArrow: '<p class="prevArrow">&lsaquo;</p>',
-        nextArrow: '<p class="nextArrow">&rsaquo;</p>'
+        prevArrow: '<img src="./src/img/carousel/ArrowL.png" alt="icon" class="prewArrow">',
+        nextArrow: '<img src="./src/img/carousel/ArrowR.png" alt="icon" class="nextArrow">'
     });
 })();
