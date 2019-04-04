@@ -115,3 +115,73 @@
         }
     }
 }
+
+@media (min-width: 481px) {
+    .carousel {
+        width: 77%;
+    
+        &__item {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    
+        &__user {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    
+        &__name {
+            color: #635c73;
+        }
+    
+        &__feedback {
+            font-size: 20px;
+            padding-top: 23px;
+            padding-bottom: 25px;
+        }
+    
+        &__time {
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+    
+        .prewArrow {
+            right: 108%;
+            top: 65%;
+        }
+    
+        .nextArrow {
+            left: 108%;
+            bottom: 29%;
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .carousel {
+        width: 63%;
+    
+        &__item {
+            margin-top: 60px;
+            margin-bottom: 55px;
+        }
+    
+        &__user {
+            padding-top: 27px;
+            padding-bottom: 24px;
+        }
+    
+        &__feedback {
+            padding-top: 24px;
+            padding-bottom: 22px;
+        }
+    
+        .prewArrow {
+            top: 63%;
+        }
+    
+        .nextArrow {
+            bottom: 32%;
+        }
+    }
+}
