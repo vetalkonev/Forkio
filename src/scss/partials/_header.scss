@@ -1,22 +1,22 @@
 
   .header {
     &__logo-link_img {
-      background: url(/src/img/header/Logo.svg)no-repeat center/cover;
+      background: url(/src/img/header/logo.svg)no-repeat center/cover;
       width: 43px;
       height: 41px;
       //transition: all 0.5s;
     }
     &__logo-link_img:hover {
-      background: url(/src/img/header/Logo_hover.svg) no-repeat center/cover;
+      background: url(/src/img/header/logo-hover.svg) no-repeat center/cover;
     }
   
     &__burger-menu {
-      background: url(/src/img/header/sandwich.svg) no-repeat center/cover;
+      background: url(/src/img/header/burger.svg) no-repeat center/cover;
       width: 26px;
       height: 21px;
     }
     &__burger-menu--active {
-      background: url(/src/img/header/cross.png) no-repeat center/cover;
+      background: url(/src/img/header/burger-x.png) no-repeat center/cover;
       width: 25px;
       height: 25px;
     }
