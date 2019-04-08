@@ -3,3 +3,14 @@
     justify-content: space-between;
     align-items: center;
 }
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+ 
+  @mixin width70 {
+    width: 80%;
+    margin: 0 auto;
+  }
+ 
