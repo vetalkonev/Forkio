@@ -14,3 +14,8 @@
     margin: 0 auto;
   }
  
+
+@mixin grid-center {
+    display: grid;
+    justify-items: center;
+}
