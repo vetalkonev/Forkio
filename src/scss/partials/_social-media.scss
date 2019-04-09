@@ -29,14 +29,48 @@
         &--github {
             background-color: #f3f3f3;
             color: #000000;
+
+            &:hover{
+                transition: 0.4s;
+                background-color: #2b414d;
+                color: #f3f3f3;
+
+                & .social__icon--github {
+                    background-image: url(../../../src/img/social/github-icon-hover.png);
+                }
+            }
         }
 
         &--twitter {
             background-color: #26a6d1;
+            border: 1px solid transparent;
+
+            &:hover {
+                transition: 0.4s;
+                border: 1px solid #26a6d1;
+                color: #26a6d1;
+                background-color: #fff;
+
+                & .social__icon--twitter {
+                    background-image: url(../../../src/img/social/twitter-icon-hover.png);
+                }
+            }
         }
 
         &--facebook {
             background-color: #3b5998;
+            border: 1px solid transparent;
+
+            &:hover {
+                transition: 0.4s;
+                border: 1px solid #3b5998;
+                background-color: #fff;
+                color: #3b5998;
+
+                & .social__icon--facebook {
+                    background-image: url(../../../src/img/social/facebook-icon-hover.png);
+                }
+            }
         }
     }
 
@@ -48,6 +82,28 @@
     &__folowers-amount {
         color: #848e97;
         font-size: 14px;
+    }
+
+    &__icon {
+
+        &--github {
+            width: 20px;
+            height: 20px;
+            background-image: url(../../../src/img/social/github-icon.png);
+        }
+
+        &--twitter {
+            width: 19px;
+            height: 15px;
+            background-image: url(../../../src/img/social/twitter-icon.png);
+        }
+
+        &--facebook {
+            width: 8px;
+            height: 16px;
+            background-image: url(../../../src/img/social/facebook-icon.png);
+        }
+
     }
 }
 
