@@ -1,0 +1,217 @@
+.footer {
+    font-family: Montserrat, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 7px;
+
+    &__description {
+        padding-top: 20px;
+        padding-bottom: 18px;
+    }
+
+    &__logo {
+        margin-bottom: 36px;
+    }
+
+    &__logo-title {
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 16px;
+        color: #333;
+
+        &--span {
+            color: #8d81ac;
+        }
+    }
+
+    &__text {
+        color: #848e97;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &__menu {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    &__navigation {
+        color: #323232;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.32px;
+        margin-bottom: 23px;
+    }
+
+    &__menu-item {
+        display: inline-block;
+        color: #8d81ac;
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: 0.3px;
+        border: 2px solid transparent;
+
+        &:hover {
+            transition: 0.4s;
+            border-bottom: 2px solid #8d81ac;
+        }
+    }
+
+    &__contacts {
+        padding-top: 18px;
+        padding-bottom: 19px;
+    }
+
+    &__phone-number {
+        color: #31384d;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.6px;
+        margin-bottom: 15px;
+    }
+    
+    &__schedule {
+        color: #848e97;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.24px;
+        margin-bottom: 38px;
+    }
+
+    &__NY {
+        color: #323232;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.32px;
+        margin-bottom: 20px;
+    }
+
+    &__street {
+        color: #848e97;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 0.28px;
+    }
+
+    &__info {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__info-title {
+        color: #323232;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.32px;
+    }
+
+    &__info-text {
+        color: #848e97;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 0.28px;
+    }
+}
+
+@media (min-width: 401px) {
+    .footer {
+        padding-top: 7px;
+        padding-bottom: 9px;
+        padding-left: 24px;
+    
+        &__description {
+            padding-top: 7px;
+        }
+
+        &__logo {
+            display: grid;
+            grid-template-columns: 43px 1fr;
+            align-items: center;
+            grid-column-gap: 18px;
+        }
+
+        &__logo-img {
+            width: 43px;
+            height: 41px;
+            background-image: url(../../../src/img/header/logo.svg);
+
+            &:hover {
+                background-image: url(../../../src/img/header/logo-footer-hover.png);
+            }
+        }
+    
+        &__text {
+            width: 60%;
+        }
+     }
+}
+
+@media (min-width:481px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 90px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+        &__description {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    
+        &__logo {
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__menu {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__contacts {
+            padding-top: 18px;
+            padding-bottom: 14px;
+        }
+    
+        &__info {
+            padding-top: 20px;
+            padding-bottom: 14px;
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .footer {
+        grid-template-columns: 24% 11% 19% 26%;
+        grid-column-gap: 80px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        padding-left: 0;
+    
+        &__description {
+            padding-top: 20px;
+        }
+    
+        &__logo {
+            margin-bottom: 24px;
+        }
+
+        &__menu {
+            padding-top: 20px;
+        }
+
+        &__contacts {
+            padding-top: 20px;
+        }
+    
+        &__info {
+            padding-top: 20px;
+        }
+    }
+}
+
