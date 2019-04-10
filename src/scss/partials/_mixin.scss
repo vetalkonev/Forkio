@@ -19,3 +19,22 @@
     display: grid;
     justify-items: center;
 }
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+      color: #c8cbcf;
+      font-size: 14px;
+    }
+    &:-moz-placeholder           {
+      color: #c8cbcf;
+      font-size: 14px;
+    }
+    &::-moz-placeholder          {
+      color: #c8cbcf;
+      font-size: 14px;
+    }
+    &:-ms-input-placeholder      {
+      color: #c8cbcf;
+      font-size: 14px;
+    }  
+}
