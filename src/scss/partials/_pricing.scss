@@ -1,6 +1,6 @@
 .pricing {
-  background-color: #4a3b4e;
   background-image: url(/src/img/pricing/Layer2.png) no-repeat center/cover;
+  background-color: #4a3b4e;
   text-align: center;
   padding-bottom: 97px;
 
@@ -59,7 +59,7 @@
 
   &__item {
     max-width: 257px;
-    @include width70;
+    margin: 0 auto;
     width: 90%;
     margin-bottom: 15px;
   }

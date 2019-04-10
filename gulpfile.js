@@ -99,8 +99,8 @@ gulp.task('img', function() {
   
 
   // !!!!!! FINAL BUILD
-// gulp.task('dev', gulpSequence('clean', 'srv'));
+gulp.task('dev', gulpSequence('clean', 'srv'));
 
-gulp.task('build', gulpSequence('clean',["scss", "uglify", 'img'], ['copyCSS', 'copyJS'], 'srv') );
+gulp.task('build', gulpSequence('clean',["scss", "uglify", 'img'], ['copyCSS', 'copyJS']) );
 
 // gulp.task("default", ["dev"]);

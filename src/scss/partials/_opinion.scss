@@ -1,5 +1,5 @@
 .opinion {
-  max-width: 1200px;
+ 
   text-align: center;
   padding-bottom: 10px;
   background: url(/src/img/opinion/Layer_1.svg) no-repeat center/cover;
@@ -17,11 +17,11 @@
     margin-top: 37px;
   }
   &__item {
-    @include width70;
+    @include width-80;
     margin-bottom: 35px;
   }
   &__line {
-    @include width70;
+    @include width-80;
     height: 2px;
     background: #665769;
   }
@@ -55,7 +55,7 @@
     display: block;
     font-family: 'Lato', sans-serif;
     color: rgba(162, 145, 165, 0.8);
-    @include width70;
+    @include width-80;
     font-size: 14px;
     padding-bottom: 17px;
   }
