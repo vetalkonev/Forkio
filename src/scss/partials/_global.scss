@@ -1,5 +1,36 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
-    padding: 0px 10px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-wrapper--center {
+  justify-content: center;
+}
+
+.btn {
+  color: $text-white;
+  background: $btn-bg;
+  padding: 12px 25px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid $btn-bg;
+}
+
+.header__app-btn--mod {
+  padding: 15px 32px;
 }

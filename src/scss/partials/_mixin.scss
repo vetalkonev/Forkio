@@ -1,10 +1,41 @@
 @mixin flex-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin width70 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
 @mixin grid-center {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    color: #c8cbcf;
+    font-size: 14px;
+  }
+  &:-moz-placeholder {
+    color: #c8cbcf;
+    font-size: 14px;
+  }
+  &::-moz-placeholder {
+    color: #c8cbcf;
+    font-size: 14px;
+  }
+  &:-ms-input-placeholder {
+    color: #c8cbcf;
+    font-size: 14px;
+  }
 }

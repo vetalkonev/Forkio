@@ -1,0 +1,123 @@
+.pricing {
+  background-color: #4a3b4e;
+  background-image: url(/src/img/pricing/Layer2.png) no-repeat center/cover;
+  text-align: center;
+  padding-bottom: 97px;
+
+  &__title {
+    padding: 50px 0;
+    color: $text-white;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__item-title {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 46px 0 34px;
+    color: $text-white;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &__item-title__active {
+    background: #392a3a;
+  }
+
+  &__item-price {
+    color: $text-white;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 32px 0 24px;
+  }
+
+  &__item-line {
+    background: #8d81ac;
+    height: 5px;
+    width: 60px;
+    margin-bottom: 31px;
+
+  }
+
+  &__item-per-month {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #8e8290;
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  &__item-description {
+    color: $text-white;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 37px;
+  }
+
+  &__item-description-mod {
+    margin-bottom: 68px;
+  }
+
+  &__item {
+    max-width: 257px;
+    @include width70;
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  &__item-bg-wrapper {
+    @include flex-column;
+    align-items: center;
+    background: #5d4d60;
+  }
+
+  &__item-bg-wrapper__active {
+    background: #403042;
+  }
+
+  &__item-btn-mod {
+    margin-bottom: 47px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.15);
+    border: 0;
+    padding: 15px 37px;
+    font-weight: normal;
+  }
+
+  &__item-btn-mod:hover {
+    background: rgba(255, 255, 255, 0.7);
+    color: #7f6d78;
+
+  }
+
+  &__item:nth-child(3) {
+    max-width: 300px;
+    height: 560px;
+  }
+
+  &__item-description__active {
+    margin-bottom: 92px;
+  }
+
+}
+
+@media screen and (min-width: 401px) {
+  .pricing {
+
+    &__title {
+      font-size: 42px;
+    }
+
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .pricing__item {
+    margin: 0 0 15px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .pricing__title {
+    font-size: 48px;
+  }
+}
