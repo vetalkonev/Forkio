@@ -1,23 +1,23 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-    padding: 0 10px;
-    max-width: 1200px;
-    min-width: 320px;
-    margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 .flex-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-wrapper--center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .btn {
@@ -30,6 +30,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   border: 1px solid $btn-bg;
 }
-.header__app-btn--mod{
+
+.header__app-btn--mod {
   padding: 15px 32px;
 }
