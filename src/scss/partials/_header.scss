@@ -120,13 +120,19 @@
       font-weight: 700;
     }
 
-    &__logo-link:hover .header__logo-tittle {
+    &__logo-link:hover /*.header__logo-tittle */{
+
+      & .header__logo-tittle {
       color: $text-white;
+      }
+      & .header__logo-link-img {
+        background: url(/src/img/header/logo-hover.svg) no-repeat center/cover;
+      }
     }
 
-    &__logo-link:hover .header__logo-link_img {
-      background: url(/src/img/header/logo-hover.svg) no-repeat center/cover;
-    }
+    //&__logo-link:hover .header__logo-link-img {
+    //  background: url(/src/img/header/logo-hover.svg) no-repeat center/cover;
+    //}
   }
   .app {
     &__title {
