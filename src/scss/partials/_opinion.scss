@@ -1,8 +1,8 @@
 .opinion {
-  background-color: #4b3b4e;
   text-align: center;
   padding-bottom: 10px;
-  background: url(/src/img/opinion/Layer_1.svg) no-repeat center/cover;
+  background: #4b3b4e url(/src/img/opinion/Layer_1.svg) no-repeat;
+
   &__title {
     padding: 50px 0;
     color: $text-white;
