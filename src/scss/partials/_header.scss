@@ -22,7 +22,6 @@
   }
 }
 
-
 .header {
   background: $header-bg;
 
@@ -76,6 +75,7 @@
     color: $btn-bg;
   }
 }
+
 .app {
 
   margin: 0 auto;
@@ -120,11 +120,13 @@
       font-weight: 700;
     }
 
-    &__logo-link:hover /*.header__logo-tittle */{
+    &__logo-link:hover /*.header__logo-tittle */
+    {
 
       & .header__logo-tittle {
-      color: $text-white;
+        color: $text-white;
       }
+
       & .header__logo-link-img {
         background: url(/src/img/header/logo-hover.svg) no-repeat center/cover;
       }
