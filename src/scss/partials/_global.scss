@@ -3,3 +3,18 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+.btn {
+    color: $white-text;
+    background: $btn-bg;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid $btn-bg;
+
+}
+.header__app-btn--mod{
+    padding: 15px 32px;
+}
+
