@@ -30,7 +30,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify-es": "^1.0.4",
     "imagemin-pngquant": "^7.0.0",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "sass": "^1.17.3"
